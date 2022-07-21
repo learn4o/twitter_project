@@ -6,6 +6,7 @@ import styles from "../styles/Sample.module.css";
 export default function Sample() {
   return (
     <div style={{ backgroundColor: "grey" }}>
+      <div>Something</div>
       <HomeIcon />
     </div>
   );
