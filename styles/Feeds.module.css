@@ -1,0 +1,29 @@
+.main {
+    margin: auto;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 16px;
+    padding: 16px;
+
+}
+
+.part {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 16px;
+    font-size: 30px;
+    text-align: center;
+    height: 500px;
+}
+
+@media only screen and (max-width:450px) {
+    .main {
+        grid-template-columns: auto;
+    }
+
+
+
+}
+
+
