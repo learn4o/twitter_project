@@ -9,6 +9,7 @@ export default function Sample() {
       <div>Something</div>
       <HomeIcon />
       <HomeIcon />
+      <HomeIcon /> <HomeIcon />
       <HomeIcon />
     </div>
   );
