@@ -7,9 +7,6 @@ export default function Sample() {
   return (
     <div style={{ backgroundColor: "grey" }}>
       <HomeIcon />
-      <HomeIcon />
-      <HomeIcon />
-      <HomeIcon />
       <div>Hello World!</div>
     </div>
   );
