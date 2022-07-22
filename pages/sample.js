@@ -10,6 +10,7 @@ export default function Sample() {
       <HomeIcon />
       <HomeIcon />
       <HomeIcon />
+      <div>Hello World!</div>
     </div>
   );
 }
