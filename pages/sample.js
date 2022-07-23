@@ -10,7 +10,6 @@ export default function Sample() {
       <div>Something</div>
       <HomeIcon />
       <HomeIcon />
-      <First />
     </div>
   );
 }
