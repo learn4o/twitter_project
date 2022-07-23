@@ -8,6 +8,7 @@ export default function Sample() {
     <div style={{ backgroundColor: "grey" }}>
       <HomeIcon />
       <div>Hello World!</div>
+      <div>23 07 2022</div>
     </div>
   );
 }
