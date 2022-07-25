@@ -1,8 +1,8 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import HomeIcon from '../images/HomeIcon';
-import styles from '../styles/Sample.module.css';
-import First from './api/First';
+import Head from "next/head";
+import Image from "next/image";
+import HomeIcon from "../images/HomeIcon";
+import styles from "../styles/Sample.module.css";
+import First from "./api/First";
 
 export default function Sample() {
   return (
