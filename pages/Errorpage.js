@@ -1,10 +1,10 @@
-import Header from "../components/Header"
+import MetaLayout from "../components/MetaLayout"
 import TwitterIcon from "../components/TwitterIcon"
 import styles from "../styles/ErrorPage.module.css"
 export default   function Errorpage() 
 {
    return <div>  
-    <Header title={"ERROR"}/>
+    <MetaLayout title={"ERROR"}/>
 
     <div className={styles.page}>
     
