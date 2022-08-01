@@ -25,11 +25,11 @@
     border: 2px solid #1272d2;
     width: inherit;
     border-radius: 80px;
+    transition: 500ms ease-in-out; 
+
 
 }
 .gohome:hover{
     background-color: rgb(6, 168, 232);
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
     cursor: pointer;
 }
