@@ -10,9 +10,9 @@
 }
 .card{  
     
-    padding: 32px;
+    padding: calc(2*var(--padding));
     color: var(--primaryTextColor);
-    border-radius: var(--padding);
+    border-radius: calc(2*var(--borderRadius));
     background-color: var(--cardColor);
     
    
@@ -20,11 +20,11 @@
 
 .gohome{ 
     display: block;
-    margin-top: 64px;
+    margin-top:  calc(8*var(--borderRadius));
     padding: var(--padding);
     border: 2px solid var( --primaryColor);
     width: inherit;
-    border-radius: 80px;
+    border-radius:  calc(10*var(--borderRadius));
     transition: 500ms ease-in-out; 
 
 
