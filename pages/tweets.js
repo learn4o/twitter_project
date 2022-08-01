@@ -12,7 +12,7 @@ const Tweet = ({ tweets }) => {
   }
   return (
   
-    <div className={styles.prime}>
+    <div className={styles.prime}>  
       {tweets.map((tweet) => {
         return <div className={styles.tweetText}>
           <div className={styles.supreme}>
