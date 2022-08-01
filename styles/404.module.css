@@ -3,7 +3,7 @@
     text-align: center;
     height: 100vh;
     display: flex;
-    background-color: #324251;
+    background-color: var(--backgroundColor);
     justify-content: center;
     align-items: center;
 
@@ -11,18 +11,18 @@
 .card{  
     
     padding: 32px;
-    color: white;
-    border-radius: 13px;
-    background-color: #16202a;
+    color: var(--primaryTextColor);
+    border-radius: var(--padding);
+    background-color: var(--cardColor);
     
    
 }
 
 .gohome{ 
     display: block;
-    margin-top: 16px;
-    padding: 16px;
-    border: 2px solid #1272d2;
+    margin-top: 64px;
+    padding: var(--padding);
+    border: 2px solid var( --primaryColor);
     width: inherit;
     border-radius: 80px;
     transition: 500ms ease-in-out; 
@@ -30,6 +30,6 @@
 
 }
 .gohome:hover{
-    background-color: rgb(6, 168, 232);
+    background-color:var(--primaryColor);
     cursor: pointer;
 }
