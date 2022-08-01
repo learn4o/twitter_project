@@ -1,5 +1,5 @@
 const CommentIcon = ({ height, width, color }) => {
-  return (
+  return (  
     <svg
       style={{ height: height, width: width, color: color }}
       xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,6 @@
 const VerifiedIcon = ({ height, width, color }) => {
   return (
-    <svg
+    <svg  
     style={{ height: height, width: width, color: color }}
       xmlns="http://www.w3.org/2000/svg"
       enable-background="new 0 0 24 24"
