@@ -21,7 +21,7 @@ const Tweet = ({ tweets }) => {
           <span className={styles.date}><ClockIcon height="20px" width="20px" color="white"/></span>
           <span >{tweet.created_at}</span>
           </div><br/>{
-          tweet.text}<br/><br/>
+          tweet.text}<br/><br/> 
          <div className={styles.fcontainer}>
          <div className={styles.fitem1}><CommentIcon height="20px" width="20px" color="white"/><br/>{tweet.public_metrics.reply_count}</div>
          <div className={styles.fitem2}><ReplyAllIcon height="20px" width="20px" color="white"/><br/>{tweet.public_metrics.retweet_count}</div>
