@@ -2,12 +2,13 @@
   padding: 16px;
   border-radius: 16px;
   margin: 16px 0px;
-  background-color: #16202A;
-  margin-left: 30%; 
+  background-color: #16202a;
+  margin-left: 30%;
   margin-right: 30%;
+  color: white;
 }
 
-.fcontainer{
+.fcontainer {
   display: grid;
   grid-template-columns: auto auto auto auto;
   text-align: center;
@@ -20,31 +21,29 @@
 }
 .fitem3 {
   border-right: 0.2px solid white;
-}xx
+}
 
-.prime{
+.prime {
   width: 100%;
   background-color: #324251;
   padding: 16px;
   margin: 0px;
-  color: white;
+  /* color: white; */
 }
 
-.tweetTextSub{
+.tweetTextSub {
   padding-right: 25%;
 }
- .date{ 
+.date {
   margin-left: 25%;
-} 
+}
 
 .userid {
   font-size: small;
-  color: #324251 ;
+  color: #324251;
   margin: 2px;
 }
 
-.supreme{
+.supreme {
   display: flex;
 }
-
-  
