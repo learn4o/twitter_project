@@ -10,7 +10,7 @@ export default function feeds() {
 
             
                 <img className={styles.imgs
-                } src="https://www.nps.gov/common/uploads/banner_image/imr/homepage/A521CA99-E490-2901-4C34F03074625EA1.jpg"></img>
+                } src="https://i.pinimg.com/736x/4f/12/ab/4f12ab83c7e68952c1a0d1efa922e36f.jpg"></img>
             
 
 
