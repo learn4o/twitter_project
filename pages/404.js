@@ -1,6 +1,7 @@
 import MetaLayout from "../components/MetaLayout"
 import TwitterIcon from "../components/TwitterIcon"
 import styles from "../styles/404.module.css"
+import Link from "next/link"
 export default   function Errorpage() 
 {
    return <div>  
@@ -14,8 +15,9 @@ export default   function Errorpage()
         <p>
          Something went wrong, but don&apos;t fret - it&apos;s not your fault. Let&apos;s try again.
         </p> 
-        <a href="/feeds">
-         <div className={styles.Logoutbox} >  Go home</div> </a>
+        <Link href="feeds">   
+         <a className={styles.gohome}> Go home </a> 
+         </Link>
 
 
         
