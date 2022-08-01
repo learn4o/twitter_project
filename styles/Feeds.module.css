@@ -17,6 +17,13 @@
     height: 500px;
 }
 
+.page{
+    display: flex;
+}
+.heading{
+    margin-top: 330px;
+}
+
 @media only screen and (max-width:450px) {
     .main {
         grid-template-columns: auto;
