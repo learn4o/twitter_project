@@ -5,7 +5,7 @@ import Link from "next/link"
 export default   function Errorpage() 
 {
    return <div>  
-    <MetaLayout title={"ERROR"}/>
+    <MetaLayout title={"Page Not Found"}/>
 
     <div className={styles.page}>
     
@@ -13,7 +13,7 @@ export default   function Errorpage()
         <TwitterIcon/>
         <h1> Error </h1>
         <p>
-         Something went wrong, but don&apos;t fret - it&apos;s not your fault. Let&apos;s try again.
+         You Have Found A Page That Does Not Exists
         </p> 
         <Link href="feeds">   
          <a className={styles.gohome}> Go home </a> 
