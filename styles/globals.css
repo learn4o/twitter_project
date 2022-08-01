@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+ 
+:root{
+ 
+  --backgroundColor: #324251;
+  --cardColor: #16202A;
+  --padding: 16px;
+  --primaryColor:#1DA1F2;
+  --secondaryColor:#000000;
+  --primaryTextColor: white;
+  --secondaryTextColor:#C7DAFE;
+  --infinity:999px;
 
+
+}
 
 html {
   font-family: 'Roboto', sans-serif;
