@@ -1,6 +1,6 @@
 
 
-const dateFormatter = (date) => {
+const DateFormatter = () => {
       
 /////curent time
 
@@ -10,8 +10,12 @@ var monthName =['','Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Se
 
 
 //post date //////
-var postHour=03,postmint=04,postSec=33
-var postday=03,postmonth ="Jul",postyear=2022
+var postHour="03"
+ var postmint="04"
+ var postSec="33"
+var postday="03"
+ var postmonth ="Jul"
+ var postyear="2022"
         //  console.log("Post date = "+ postday+" "+ postmonth+" "+postyear +"  "+" 03:04:33")
 
 
@@ -55,4 +59,4 @@ else if(crtYear==postyear){
    
 }
 
-export default dateFormatter
+export default DateFormatter
