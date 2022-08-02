@@ -1,24 +1,7 @@
 
 
-const DateFormatter = () => {
+const DateFormatter = (props) => {
       
-/////curent time
-
-
-var monthName =['','Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-
-
-
-//post date //////
-var postHour="03"
- var postmint="04"
- var postSec="33"
-var postday="03"
- var postmonth ="Jul"
- var postyear="2022"
-        //  console.log("Post date = "+ postday+" "+ postmonth+" "+postyear +"  "+" 03:04:33")
-
-
 //curent date ///
 var currentDate= new Date()
 var crtYear=new Intl.DateTimeFormat('en', { year: 'numeric' }).format(currentDate);
@@ -29,31 +12,34 @@ var crtMints=(currentDate.getMinutes())
 var crtSec=(currentDate.getSeconds())
 // console.log("Current Time = "+crtDay+" "+crtMont+" "+crtYear+"   "+ crtHours+":"+crtMints+":"+crtSec)
 
-
-
-
-
-
-
 console.log("show post date")
 // If date is today - 12h or 2h ago or 1m ago
 
-if (crtDay==postday){
-    if(crtHours==postHour&&crtMints==postmint){
+if (crtDay==props.postDate.postday){
+
+    if(crtHours==props.postDate.postHour&&crtMints==props.postDate.postmint){
          return (crtSec-postSec +"s ago")
-    }else if(crtHours==postHour){
-         return (crtMints-postmint+"m ago")
+
+    }else if(crtHours==props.postDate.postHour){
+
+         return (crtMints-props.postDate.postmint+"m ago")
+         
     }else {
-return (crtHours-postHour+"h ago")
+return (crtHours-props.postDate.postHour+"h ago")
     }
 }
 ////If date is current year - Jul 15 or Jan 1//
 
-else if(crtYear==postyear){
-    return (postmonth+' '+postday)
+
+
+else if(crtYear==props.postDate.postyear){
+    return (props.postDate.postmonth+' '+props.postDate.postday)
+
+
 //Else  - July 15 2020 or July 15 2019//
+
 }else{
-    return (postmonth+' '+postday+' '+postyear)
+    return (props.postDate.postmonth+' '+props.postDate.postday+' '+props.postDate.postyear)
 }
 
    
