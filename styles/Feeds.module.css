@@ -12,7 +12,7 @@
     padding: var(--padding);
     z-index: 1;
     min-height: 100vh;
-
+   
 }
 .imgs{
    width: 100%; 
