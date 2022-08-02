@@ -6,12 +6,7 @@ export default function Sample() {
     <div style={{ backgroundColor: "grey" }}>
       <div>Changes</div>
     
-      <DateFormatter postDate={{postHour:"03",
-     postmint:"04",
-     postSec:"33",
-    postday:"03",
-     postmonth :"Jul",
-     postyear:"2022"}}/>
+      <DateFormatter postApiDate="2022-07-21T20:50:35.000z"/>
 
     </div>
   );
