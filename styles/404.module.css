@@ -1,0 +1,35 @@
+
+.page{  
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    background-color: var(--backgroundColor);
+    justify-content: center;
+    align-items: center;
+
+}
+.card{  
+    
+    padding: calc(2*var(--padding));
+    color: var(--primaryTextColor);
+    border-radius: calc(2*var(--borderRadius));
+    background-color: var(--cardColor);
+    
+   
+}
+
+.gohome{ 
+    display: block;
+    margin-top:  calc(8*var(--borderRadius));
+    padding: var(--padding);
+    border: 2px solid var( --primaryColor);
+    width: inherit;
+    border-radius:  calc(10*var(--borderRadius));
+    transition: 500ms ease-in-out; 
+
+
+}
+.gohome:hover{
+    background-color:var(--primaryColor);
+    cursor: pointer;
+}
