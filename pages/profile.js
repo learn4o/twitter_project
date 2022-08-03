@@ -1,37 +1,7 @@
-import styles from "../styles/Profile.module.css"
-import numberFormatter from "../helpers/numberFormatter";
-import VerifiedIcon from "../components/VerifiedIcons"; 
-import ProfileURLProcessing from "../helpers/ProfileURlProcessing";
-export default function profile({data}) {
+import Profile from "../components/Profile";
+export default function profile({user}) {
     return <div>
-        <div className={styles.profile}>
-            <div className={styles.profileimg}>
-<img src={ProfileURLProcessing (data.profile_image_url)}></img>
-            </div>
-            <div className={styles.details}> 
-                <p>{data.name}</p>
-                <a>@{data.username}</a>
-                <div className={styles.verfication}>
-                {VerifiedIcon(data.verified)}
-                </div>
-                <p> {data.location} </p> <i></i>
-                <p>{data.description}</p>
-            </div>
-            <div className={styles.socialprofile}>
-                <div className={styles.tweets}>
-                    <p className={styles.HeadingColor}>Tweets</p>
-                    <p>{numberFormatter(data.public_metrics.tweet_count)}</p>
-                </div>
-                <div className={styles.followers}>
-                  <p className={styles.HeadingColor}>Followers</p>
-                    <p>{numberFormatter(data.public_metrics.followers_count)}</p>
-                </div>
-                <div className={styles.following}>
-                    <p className={styles.HeadingColor}>Following</p>
-                    <p>{numberFormatter(data.public_metrics.following_count)}</p>
-                </div>
-            </div>
-        </div>
+      <Profile profile={user}/>       
     </div>
 }
 export async function getServerSideProps(context) {
@@ -48,7 +18,7 @@ export async function getServerSideProps(context) {
     };
   
     const response = await fetch(
-      "https://api.twitter.com/2/users/by/username/imVkohli?user.fields=created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld",
+      "https://api.twitter.com/2/users/by/username/isro?user.fields=created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld",
       requestOptions
     )
       .then((response) => response.json())
@@ -56,5 +26,5 @@ export async function getServerSideProps(context) {
       .catch((error) => console.log("error", error));
   
     console.log(response);
-    return { props: { data: response.data } };
+    return { props: { user: response.data } };
   }
