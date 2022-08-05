@@ -14,7 +14,7 @@ const Tweet = ({ tweets }) => {
     <div className={styles.prime}>
       {tweets.map((tweet) => {
         return (
-          <div className={styles.tweetText}>
+          <div className={styles.tweetText} key={tweet.id}>
             <div className={styles.supreme}>
               <span>User Name </span>
               <span>
