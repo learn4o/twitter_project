@@ -11,26 +11,51 @@ const Tweet = ({ tweets }) => {
     tweets[i];
   }
   return (
-  
-    <div className={styles.prime}>  
+    <div className={styles.prime}>
       {tweets.map((tweet) => {
-        return <div className={styles.tweetText}>
-          <div className={styles.supreme}>
-          <span>User Name </span><span><VerifiedIcon height="20px" width="20px" color="1DA1F2"/></span>
-          <span className={styles.userid}> @user_name</span>
-          <span className={styles.date}><ClockIcon height="20px" width="20px" color="white"/></span>
-          <span >{tweet.created_at}</span>
-          </div><br/>{
-          tweet.text}<br/><br/> 
-         <div className={styles.fcontainer}>
-         <div className={styles.fitem1}><CommentIcon height="20px" width="20px" color="white"/><br/>{tweet.public_metrics.reply_count}</div>
-         <div className={styles.fitem2}><ReplyAllIcon height="20px" width="20px" color="white"/><br/>{tweet.public_metrics.retweet_count}</div>
-         <div className={styles.fitem3}><HeartIcon height="20px" width="20px" color="white"/><br/>{tweet.public_metrics.like_count}</div>
-         <div className={styles.fitem4}><ShareIcon height="20px" width="20px" color="white"/><br/>{tweet.public_metrics.quote_count}</div>
-         </div></div>;
+        return (
+          <div className={styles.tweetText}>
+            <div className={styles.supreme}>
+              <span>User Name </span>
+              <span>
+                <VerifiedIcon height="20px" width="20px" color="1DA1F2" />
+              </span>
+              <span className={styles.userid}> @user_name</span>
+              <span className={styles.date}>
+                <ClockIcon height="20px" width="20px" color="white" />
+              </span>
+              <span>{tweet.created_at}</span>
+            </div>
+            <br />
+            {tweet.text}
+            <br />
+            <br />
+            <div className={styles.fcontainer}>
+              <div className={styles.fitem1}>
+                <CommentIcon height="20px" width="20px" color="white" />
+                <br />
+                {tweet.public_metrics.reply_count}
+              </div>
+              <div className={styles.fitem2}>
+                <ReplyAllIcon height="20px" width="20px" color="white" />
+                <br />
+                {tweet.public_metrics.retweet_count}
+              </div>
+              <div className={styles.fitem3}>
+                <HeartIcon height="20px" width="20px" color="white" />
+                <br />
+                {tweet.public_metrics.like_count}
+              </div>
+              <div className={styles.fitem4}>
+                <ShareIcon height="20px" width="20px" color="white" />
+                <br />
+                {tweet.public_metrics.quote_count}
+              </div>
+            </div>
+          </div>
+        );
       })}
     </div>
-    
   );
 };
 
@@ -57,7 +82,7 @@ export async function getServerSideProps(context) {
   console.log(tweets);
   return {
     props: {
-      tweets: tweets,    
+      tweets: tweets,
     },
   };
 }
