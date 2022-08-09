@@ -31,9 +31,14 @@
     color: var(--primaryTextColor);
 }
 
+.page{
+    display: flex;
+}
+.heading{
+    margin-top: 330px;
+}
 
-
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:450px) {
     .main {
         grid-template-columns: auto;
         margin-top:  calc(-5*var(--padding));
