@@ -8,7 +8,7 @@ export async function getServerSideProps(context) {
     var myHeaders = new Headers();
     myHeaders.append(
       "Authorization",
-      "Bearer AAAAAAAAAAAAAAAAAAAAAMWGewEAAAAA2x6S4LF6Hgth69Bd5BbxxFk%2BBko%3DoIdt0OJapGlQv0Vn63sOtIypxejwRzjWXsGPbvmIJIYqEnBdfz"
+      "Bearer "+ process.env.BEARERTOKEN
     );
   
     var requestOptions = {
