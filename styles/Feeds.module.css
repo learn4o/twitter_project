@@ -1,18 +1,19 @@
 .home{
     background-color: var(--backgroundColor);
+    min-height: 100vh;
+
 }
 
 .main { 
     margin: auto;
     margin-top: calc(-5*var(--padding));
-    max-width:  1440px;
+    max-width:  80rem;
     display: grid;
     grid-template-columns: 2fr 4fr;
     grid-gap: var(--padding);
     padding: var(--padding);
     z-index: 1;
-    min-height: 100vh;
-
+   
 }
 .imgs{
    width: 100%; 
@@ -46,6 +47,8 @@
 
 
 
-}
+} 
+
+
 
 
