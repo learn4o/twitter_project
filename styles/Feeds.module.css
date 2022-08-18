@@ -31,6 +31,9 @@
     background-color: var(--cardColor);
     color: var(--primaryTextColor);
 }
+.belowProfile{
+    margin-top: -16px;
+}
 
 .page{
     display: flex;
