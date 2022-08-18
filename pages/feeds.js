@@ -11,8 +11,8 @@ export default function feeds({user}) {
             <div className={styles.main}>
                 <div> <Profile profile={user} /> 
                 </div>
-                <div className={styles.homePage}> tweets</div>
-                {/* <div className={styles.belowProfile}> <BelowProfile/> </div> */}
+                <div className={styles.homePage}> tweets</div> 
+                
             </div> 
         </div>
     </div>

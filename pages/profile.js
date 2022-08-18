@@ -16,6 +16,7 @@ export async function getServerSideProps(context) {
       headers: myHeaders,
       redirect: "follow",
     };
+    
   
     const response = await fetch(
       "https://api.twitter.com/2/users/by/username/isro?user.fields=created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld",
