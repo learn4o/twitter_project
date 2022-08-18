@@ -1,11 +1,13 @@
 .tweetText {
   padding: 16px;
-  border-radius: 16px;
-  margin: 16px 0px;
+  border-radius: 0px 10px 10px 10px;
+  margin: 16px 8px 0px 0px;
   background-color: #16202a;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 10%;
+  margin-right: 2%;
   color: white;
+  padding-bottom: 0px;
+  border: white solid 1px;
 }
 
 .fcontainer {
@@ -15,12 +17,29 @@
   margin: 2px;
 }
 
+.fitem1 {
+  display: flex;
+  justify-content: center;
+}
+
 .fitem2 {
   border-left: 0.2px solid white;
   border-right: 0.2px solid white;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
 }
+
 .fitem3 {
   border-right: 0.2px solid white;
+  display: flex;
+  justify-content: center;
+}
+
+.fitem4 {
+  display: flex;
+  justify-content: center;
 }
 
 .prime {
@@ -28,22 +47,60 @@
   background-color: #324251;
   padding: 16px;
   margin: 0px;
-  /* color: white; */
 }
 
 .tweetTextSub {
   padding-right: 25%;
 }
+
 .date {
-  margin-left: 25%;
+  
+  margin-left: 60%;
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 .userid {
   font-size: small;
-  color: #324251;
+  color: #4d6780;
   margin: 2px;
+  padding-left: 2px;
+}
+
+.fitemText {
+  font-size: small;
+  margin-bottom: 12px;
+  margin-left: 4px;
 }
 
 .supreme {
   display: flex;
+}
+
+.blueTick {
+  padding-left: 4px;
+}
+
+.secondPrime {
+  margin-left: 30%;
+  margin-right: 22%;
+  padding-left: 10px;
+  box-shadow: black 20px;
+  background-color: #16202a;
+  border-radius: 10px;
+  padding-bottom: 16px;
+}
+
+.profilePic2{
+  width: 80px;
+  height: 80px;
+  padding-right: 4px;
+}
+
+.profilePic {
+  
+  display: grid;
+  grid-template-columns: 1px auto;
+  
 }
