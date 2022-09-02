@@ -1,5 +1,6 @@
 import dateFormatter from "../helpers/dateFormatter";
 import numberFormatter from "../helpers/numberFormatter";
+import urlFormatter from "../helpers/urlFormatter";
 import CommentIcon from "../images/CommentsIcon";
 import HeartIcon from "../images/HeartIcon";
 import ReplyAllIcon from "../images/ReplyAllIcon";
@@ -29,13 +30,11 @@ const Tweet = ({ tweets }) => {
                   </span>
                   <span className={styles.userid}> @user_name</span>
                   <span className={styles.date}>
-                    
-
-                    {dateFormatter(tweet.created_at)}</span>
-                  
+                    {dateFormatter(tweet.created_at)}
+                  </span>
                 </div>
                 <br />
-                {tweet.text}
+                {urlFormatter(tweet)}
                 <br />
                 <br />
                 <div className={styles.fcontainer}>
